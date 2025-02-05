@@ -7,51 +7,44 @@
 \usepackage{setspace}
 \usepackage{enumitem}
 \usepackage{titlesec}
-\usepackage{helvet} % Modern sans-serif font
+\usepackage{helvet} 
 
-% Geometry for page margins
 \geometry{a4paper, margin=1in}
 
-% Custom Colors
 \definecolor{shakespeareblue}{RGB}{0, 51, 102}
 \definecolor{shakespearegreen}{RGB}{44, 117, 52}
 \definecolor{shakespeareyellow}{RGB}{255, 204, 0}
 
-% Page Style
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\textbf{\Huge Shakespeare's Cities Visualization}} 
-\fancyhead[R]{\includegraphics[width=2cm]{logo_pant.jpg}} % Add your logo image if needed
+\fancyhead[R]{\includegraphics[width=2cm]{logo_pant.jpg}}
 \fancyfoot[C]{\thepage}
 
-% Title Formatting with Modern Font
-\renewcommand{\rmdefault}{ppl} % Default serif font
-\renewcommand{\sfdefault}{phv} % Helvetica as sans-serif font
+\renewcommand{\rmdefault}{ppl} 
+\renewcommand{\sfdefault}{phv} 
 
 \titleformat{\section}[block]{\normalfont\Large\bfseries\color{shakespeareblue}}{\thesection}{1em}{}
 \titleformat{\subsection}[runin]{\normalfont\large\bfseries\color{shakespearegreen}}{\thesubsection}{1em}{}
 \titleformat{\subsubsection}[runin]{\normalfont\itshape\color{shakespeareyellow}}{\thesubsubsection}{1em}{}
 
-% Define title and author
 \title{
-    \vspace{0cm} % Adjusted for tighter layout
+    \vspace{0cm} 
     \begin{flushleft} 
-    \textbf{\huge \sffamily Visualization of Shakespeare's Cities} \\[0.5cm] % Modern font for the title
+    \textbf{\huge \sffamily Visualization of Shakespeare's Cities} \\[0.5cm] 
     \end{flushleft}
     \LARGE \textbf{Rrona Abrashi and Qendrese Buza } \\[1cm]
     \textcolor{shakespeareyellow}{\rule{0.8\linewidth}{0.5mm}} \\[1cm]
     \large \textit{January 2025} 
-    \vspace{1cm} % Reduced bottom space
+    \vspace{1cm}
 }
 \author{}
 \date{}
 
 \begin{document}
 
-% Title page with yellow stylings
 \maketitle
 
-% Add a brief introductory section on the first page
 \noindent
 \textbf{\huge \color{shakespeareblue} Introduction} \\[0.5cm]
 To better understand the geographical range of locations referenced in Shakespeare’s plays, this visualization explores the diverse settings used throughout his works. By using interactive mapping tools, we can chart out the cities and regions that shaped his stories, bringing new insights into his writing and the cultural landscape of the Elizabethan era. The goal is to explore how Shakespeare’s imagination traveled far beyond England to places like Italy, Denmark, and Greece, influencing some of his most iconic plays. This project uses modern tools such as \textbf{RStudio} and the \texttt{leaflet} package to bridge the past and present, offering a visual experience of Shakespeare’s global worldview.
@@ -59,15 +52,14 @@ To better understand the geographical range of locations referenced in Shakespea
 \vspace{1cm}
 
 \begin{center}
-    \includegraphics[width=0.8\linewidth]{RStudioMap.png} \\[0.5cm] % Insert a relevant image of the map
-    \textcolor{shakespeareyellow}{\rule{0.8\linewidth}{0.5mm}} % Horizontal line to enhance layout
+    \includegraphics[width=0.8\linewidth]{RStudioMap.png} \\[0.5cm] 
+    \textcolor{shakespeareyellow}{\rule{0.8\linewidth}{0.5mm}} 
 \end{center}
 
 \vspace{1cm}
 
 \newpage
 
-% Continue with the rest of the document
 \section*{\color{shakespeareblue}Visualization of Shakespeare's Cities}
 Each city mentioned in Shakespeare's plays was represented on the map as a marker, styled in unique pastel colors for a modern and visually appealing look. The map is interactive, allowing users to click on a marker to see the city's name and its connection to Shakespeare's work. For instance, Verona is prominently featured in \textit{Romeo and Juliet}, while Athens provides the magical backdrop for \textit{A Midsummer Night’s Dream}.
 
@@ -99,7 +91,7 @@ The map is included below as a static image, offering a snapshot of the geograph
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.8\linewidth]{MapPopUps.png} % Replace with your map image path
+    \includegraphics[width=0.8\linewidth]{MapPopUps.png}
     \caption{Static Image of the Interactive Map of Shakespeare's Cities}
     \label{fig:map}
 \end{figure}
