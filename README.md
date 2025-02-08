@@ -13,6 +13,16 @@ This repository contains the structured output of the project, categorized into:
 - *TheCode.R*: The R script used for data processing and map visualization.
 - *TheMainMap.html*: The interactive map output.
 
+## What We Did
+### Step 1: Data Collection & Preprocessing
+Compiled a dataset of locations appearing in Shakespeare’s plays.
+
+### Step 2: Map Creation in R
+Used packages such as ggplot2 and leaflet in R to generate the map visualization.
+
+### Step 3: Report Writing
+Documented our methodology and results in LaTeX, with images illustrating key findings.
+
 ## Credits
 Project done as part of Digital Humanities coursework at the University of Geneva.
 
